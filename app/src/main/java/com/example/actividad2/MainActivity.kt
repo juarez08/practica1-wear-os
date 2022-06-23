@@ -3,6 +3,7 @@ package com.example.actividad2
 import android.app.Activity
 import android.os.Bundle
 import android.widget.TextView
+import android.widget.Toast
 import com.example.actividad2.databinding.ActivityMainBinding
 
 class MainActivity : Activity() {
@@ -20,6 +21,14 @@ class MainActivity : Activity() {
 
         /*binding.text.text="UNIVERSIDAD"*/
 
+        binding.imgOk.setOnClickListener {
+            Toast.makeText(this, "Aceptar", Toast.LENGTH_SHORT).show() //mensaje de boton
+        }
+
+
+        binding.imgCancel.setOnClickListener {
+            Toast.makeText(this, "Cancelar", Toast.LENGTH_SHORT).show() //mensaje de boton
+        }
 
     }
 }
