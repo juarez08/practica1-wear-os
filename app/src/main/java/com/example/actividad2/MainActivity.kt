@@ -26,6 +26,7 @@ class MainActivity : Activity() {
         }
 
 
+
         binding.imgCancel.setOnClickListener {
             Toast.makeText(this, "Cancelar", Toast.LENGTH_SHORT).show() //mensaje de boton
         }
